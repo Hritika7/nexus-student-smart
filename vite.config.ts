@@ -19,3 +19,10 @@ export default defineConfig(({ mode }) => ({
     },
   },
 }));
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+
+export default defineConfig({
+  plugins: [react()],
+  base: '/nexus-student-smart/',  // Add this line - GitHub Pages needs to know the repo name
+})
